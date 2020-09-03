@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="corBackground">#0F1823</color>
+    <color name="corBackgroundLista">#364966</color>
+
+
+    <color name="corTextoBranco">#FFFFFF</color>
+
+
+    <color name="corVermelhorValorant">#FA4454</color>
+    <color name="corVermelhorValorantDark">#FC3E53</color>
+</resources>
