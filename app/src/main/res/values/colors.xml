@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="colorPrimary">#FF00AA</color>
+    <color name="colorPrimaryDark">#70034B</color>
+    <color name="colorAccent">#0088FF</color>
+
+
+
     <color name="corBackground">#0F1823</color>
     <color name="corBackgroundLista">#364966</color>
 
