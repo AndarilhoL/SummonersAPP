@@ -43,10 +43,10 @@ public class MenuFragment extends Fragment {
     }
 
     public void  criarPessoas(){
-        Pessoa pessoa = new Pessoa( R.drawable.ic_baseline_add_a_photo_24, "Rlxaaaaaaxz", "Top e JG");
+        Pessoa pessoa = new Pessoa( R.drawable.ic_guilherme, "Rlxaaaaaaxz", "Top e JG");
         this.listaPessoa.add(pessoa);
 
-        pessoa = new Pessoa(R.drawable.ic_baseline_add_a_photo_24, "AndarilhoL", "Mid" );
+        pessoa = new Pessoa(R.drawable.ic_leozin, "AndarilhoL", "Mid" );
         this.listaPessoa.add(pessoa);
 
         pessoa = new Pessoa(R.drawable.ic_baseline_add_a_photo_24, "Clavous", "Mid e JG" );
