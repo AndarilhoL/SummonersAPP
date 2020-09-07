@@ -1,4 +1,4 @@
-package com.example.summonersapp;
+package com.example.summonersapp.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,6 +7,10 @@ import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.summonersapp.fragment.ChatFragment;
+import com.example.summonersapp.fragment.MenuFragment;
+import com.example.summonersapp.fragment.PerfilFragment;
+import com.example.summonersapp.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,35 +22,34 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        bottomNavigationView= findViewById(R.id.bottomNav);
+        bottomNavigationView = findViewById(R.id.bottomNav);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(bottomNavMethod);
         getSupportFragmentManager().beginTransaction().replace(R.id.container, new MenuFragment()).commit();
         bottomNavigationView.setSelectedItemId(R.id.menu);
     }
 
-    private BottomNavigationView.OnNavigationItemSelectedListener bottomNavMethod=new
+    private BottomNavigationView.OnNavigationItemSelectedListener bottomNavMethod = new
             BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override
                 public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
 
-                    Fragment fragment=null;
+                    Fragment fragment = null;
 
-                    switch (menuItem.getItemId())
-                    {
+                    switch (menuItem.getItemId()) {
                         case R.id.menu:
-                            fragment= new MenuFragment();
+                            fragment = new MenuFragment();
                             break;
 
                         case R.id.perfil:
-                            fragment= new PerfilFragment();
+                            fragment = new PerfilFragment();
                             break;
 
                         case R.id.chat:
-                            fragment= new ChatFragment();
+                            fragment = new ChatFragment();
                             break;
                     }
-                    getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).commit();
 
                     return true;
                 }
