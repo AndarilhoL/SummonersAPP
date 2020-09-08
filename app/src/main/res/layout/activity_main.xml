@@ -22,6 +22,7 @@
         android:background="@drawable/menu_fragment_border_bottom"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
+        app:itemIconSize="40dp"
         app:menu="@menu/menu">
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
