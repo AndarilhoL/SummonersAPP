@@ -6,15 +6,17 @@ import android.graphics.Bitmap;
 public class Pessoa {
     private int imagem;
     private String nome;
-    private String funcao;
+    private int funcao;
+    private int elo;
 
     public Pessoa(){
     }
 
-    public Pessoa(int imagem,String nome, String funcao) {
+    public Pessoa(int imagem, String nome, int funcao, int elo) {
         this.imagem = imagem;
         this.nome = nome;
         this.funcao = funcao;
+        this.elo = elo;
     }
 
     public int getImagem() {
@@ -33,11 +35,19 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    public String getFuncao() {
+    public int getFuncao() {
         return funcao;
     }
 
-    public void setFuncao(String funcao) {
+    public void setFuncao(int funcao) {
         this.funcao = funcao;
+    }
+
+    public int getElo() {
+        return elo;
+    }
+
+    public void setElo(int elo) {
+        this.elo = elo;
     }
 }

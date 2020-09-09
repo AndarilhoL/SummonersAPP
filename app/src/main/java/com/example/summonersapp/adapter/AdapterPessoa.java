@@ -37,7 +37,8 @@ public class AdapterPessoa extends RecyclerView.Adapter<AdapterPessoa.MyViewHold
         Pessoa pessoa = listaPessoa.get(position);
         holder.foto.setImageResource(pessoa.getImagem());
         holder.nome.setText(pessoa.getNome());
-        holder.funcao.setText(pessoa.getFuncao());
+        holder.funcao.setImageResource(pessoa.getFuncao());
+        holder.elo.setImageResource(pessoa.getElo());
     }
 
     @Override
@@ -49,14 +50,16 @@ public class AdapterPessoa extends RecyclerView.Adapter<AdapterPessoa.MyViewHold
 
         ImageView foto;
         TextView nome;
-        TextView funcao;
+        ImageView funcao;
+        ImageView elo;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
             foto = itemView.findViewById(R.id.imageViewFoto);
             nome = itemView.findViewById(R.id.textViewNome);
-            funcao = itemView.findViewById(R.id.textViewFuncao);
+            funcao = itemView.findViewById(R.id.imageViewFuncao);
+            elo = itemView.findViewById(R.id.imageViewElo);
         }
     }
 }
