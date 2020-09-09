@@ -64,7 +64,7 @@ public class MenuFragment extends Fragment {
         pessoa = new Pessoa(R.drawable.avatar_f, "ysmnmendess", R.drawable.mid, R.drawable.iron);
         this.listaPessoa.add(pessoa);
 
-        pessoa = new Pessoa(R.drawable.avatar_m, "MonkeyBlasterBR", R.drawable.top, R.drawable.diamond);
+        pessoa = new Pessoa(R.drawable.avatar_m, "MonkeyBR", R.drawable.jungler, R.drawable.diamond);
         this.listaPessoa.add(pessoa);
 
         pessoa = new Pessoa(R.drawable.avatar_m, "MatlosL", R.drawable.mid, R.drawable.grand_master);
