@@ -43,31 +43,31 @@ public class MenuFragment extends Fragment {
     }
 
     public void  criarPessoas(){
-        Pessoa pessoa = new Pessoa( R.drawable.ic_guilherme, "Rlxaaaaaaxz", "Top e JG");
+        Pessoa pessoa = new Pessoa( R.drawable.ic_guilherme, "Rlxaaaaaaxz", R.drawable.top, R.drawable.gold);
         this.listaPessoa.add(pessoa);
 
-        pessoa = new Pessoa(R.drawable.ic_leozin, "AndarilhoL", "Mid" );
+        pessoa = new Pessoa(R.drawable.ic_leozin, "AndarilhoL", R.drawable.mid, R.drawable.iron);
         this.listaPessoa.add(pessoa);
 
-        pessoa = new Pessoa(R.drawable.ic_baseline_add_a_photo_24, "Clavous", "Mid e JG" );
+        pessoa = new Pessoa(R.drawable.avatar_m, "Clavous", R.drawable.mid, R.drawable.bronze);
         this.listaPessoa.add(pessoa);
 
-        pessoa = new Pessoa(R.drawable.ic_baseline_add_a_photo_24, "GeoLaia", "ADC e Sup" );
+        pessoa = new Pessoa(R.drawable.avatar_m, "GeoLaia", R.drawable.bottom, R.drawable.iron);
         this.listaPessoa.add(pessoa);
 
-        pessoa = new Pessoa(R.drawable.ic_baseline_add_a_photo_24, "Bia07", "Sup e ADC" );
+        pessoa = new Pessoa(R.drawable.avatar_f, "Bia07", R.drawable.sup, R.drawable.iron);
         this.listaPessoa.add(pessoa);
 
-        pessoa = new Pessoa(R.drawable.ic_baseline_add_a_photo_24, "figueira do rodo", "Top" );
+        pessoa = new Pessoa(R.drawable.avatar_m, "figueira do rodo", R.drawable.top, R.drawable.bronze);
         this.listaPessoa.add(pessoa);
 
-        pessoa = new Pessoa(R.drawable.ic_baseline_add_a_photo_24, "ysmnmendess", "Mid" );
+        pessoa = new Pessoa(R.drawable.avatar_f, "ysmnmendess", R.drawable.mid, R.drawable.iron);
         this.listaPessoa.add(pessoa);
 
-        pessoa = new Pessoa(R.drawable.ic_baseline_add_a_photo_24, "MonkeyBlasterBR", "Top" );
+        pessoa = new Pessoa(R.drawable.avatar_m, "MonkeyBlasterBR", R.drawable.top, R.drawable.diamond);
         this.listaPessoa.add(pessoa);
 
-        pessoa = new Pessoa(R.drawable.ic_baseline_add_a_photo_24, "MatlosL", "Mid e JG" );
+        pessoa = new Pessoa(R.drawable.avatar_m, "MatlosL", R.drawable.mid, R.drawable.grand_master);
         this.listaPessoa.add(pessoa);
     }
 }
